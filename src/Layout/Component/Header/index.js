@@ -1,5 +1,4 @@
 import { Disclosure, DisclosureButton } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 //
 import { useState } from 'react';
@@ -38,7 +37,7 @@ const Category = [
     },
     {
         name: 'Bí ẩn',
-        slug: 'bi-dan',
+        slug: 'bi-an',
     },
     {
         name: 'Phim 18+',
@@ -54,7 +53,7 @@ const Category = [
     },
     {
         name: 'Thể loại',
-        slug: 'the-thao',
+        slug: 'the-loai',
     },
     {
         name: 'Phiêu lưu',
@@ -74,7 +73,7 @@ const Category = [
     },
     {
         name: 'Hài hước',
-        slug: 'hai-huc',
+        slug: 'hai-huoc',
     },
     {
         name: 'Hình sự',
@@ -90,7 +89,7 @@ const Category = [
     },
     {
         name: 'Thần thoại',
-        slug: 'than-thoi',
+        slug: 'than-thoai',
     },
     {
         name: 'Chính kịch',
@@ -119,12 +118,12 @@ export default function Header() {
 
     // xử lý fillter category
     const handleFillterCategory = (slug) => {
-        navigator(`/fillter-category/${slug}.json?${slug}`, { state: slug });
+        navigator(`/fillter-category/${slug}.json?slug=${slug}`, { state: slug });
     };
 
     // xử lý category
     const handleMovie = (slug) => {
-        navigator(`/movie/${slug}.json?${slug}`, { state: slug });
+        navigator(`/movie/${slug}.json?slug=${slug}`, { state: slug });
     };
 
     return (
@@ -141,12 +140,14 @@ export default function Header() {
                             </div>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <img
-                                        style={{ width: '100px', height: '50px' }}
-                                        alt="Your Company"
-                                        src={image.logo}
-                                        className="h-8 w-auto"
-                                    />
+                                    <a href="javascript:void(0)" onClick={() => navigator('/')}>
+                                        <img
+                                            style={{ width: '100px', height: '50px' }}
+                                            alt="Your Company"
+                                            src={image.logo}
+                                            className="h-8 w-auto"
+                                        />
+                                    </a>
                                     <span className={cx('name')}>PhimHay.com</span>
                                 </div>
                             </div>

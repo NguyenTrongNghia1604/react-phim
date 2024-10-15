@@ -84,7 +84,7 @@ const Category = [
     },
     {
         name: 'Bí ẩn',
-        slug: 'bi-dan',
+        slug: 'bi-an',
     },
     {
         name: 'Phim 18+',
@@ -100,7 +100,7 @@ const Category = [
     },
     {
         name: 'Thể loại',
-        slug: 'the-thao',
+        slug: 'the-loai',
     },
     {
         name: 'Phiêu lưu',
@@ -120,7 +120,7 @@ const Category = [
     },
     {
         name: 'Hài hước',
-        slug: 'hai-huc',
+        slug: 'hai-huoc',
     },
     {
         name: 'Hình sự',
@@ -136,7 +136,7 @@ const Category = [
     },
     {
         name: 'Thần thoại',
-        slug: 'than-thoi',
+        slug: 'than-thoai',
     },
     {
         name: 'Chính kịch',

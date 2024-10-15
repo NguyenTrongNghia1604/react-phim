@@ -58,7 +58,7 @@ export default function Search() {
 
     //
     const handleDetailt = (slug) => {
-        navigate(`/detailt-film/${slug}.json?${slug}`, { state: slug });
+        navigate(`/detailt-film/${slug}.json?slug=${slug}`, { state: slug });
         setShow(false);
     };
     return (

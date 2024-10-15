@@ -31,7 +31,7 @@ const Category = [
     },
     {
         name: 'Bí ẩn',
-        slug: 'bi-dan',
+        slug: 'bi-an',
     },
     {
         name: 'Phim 18+',
@@ -47,7 +47,7 @@ const Category = [
     },
     {
         name: 'Thể loại',
-        slug: 'the-thao',
+        slug: 'the-loai',
     },
     {
         name: 'Phiêu lưu',
@@ -67,7 +67,7 @@ const Category = [
     },
     {
         name: 'Hài hước',
-        slug: 'hai-huc',
+        slug: 'hai-huoc',
     },
     {
         name: 'Hình sự',
@@ -83,7 +83,7 @@ const Category = [
     },
     {
         name: 'Thần thoại',
-        slug: 'than-thoi',
+        slug: 'than-thoai',
     },
     {
         name: 'Chính kịch',
@@ -105,12 +105,12 @@ export default function Sidebar() {
 
     // xử lý fillter category
     const handleFillterCategory = (slug) => {
-        navigator(`/fillter-category/${slug}.json?${slug}`, { state: slug });
+        navigator(`/fillter-category/${slug}.json?slug=${slug}`, { state: slug });
     };
 
     // xử lý category
     const handleMovie = (slug) => {
-        navigator(`/movie/${slug}.json?${slug}`, { state: slug });
+        navigator(`/movie/${slug}.json?slug=${slug}`, { state: slug });
     };
     return (
         <div className={cx('sidebar')}>

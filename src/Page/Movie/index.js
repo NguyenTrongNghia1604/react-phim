@@ -84,10 +84,10 @@ const Category = [
     },
     {
         name: 'Bí ẩn',
-        slug: 'bi-dan',
+        slug: 'bi-an',
     },
     {
-        name: 'Phim 18',
+        name: 'Phim 18+',
         slug: 'phim-18',
     },
     {
@@ -100,7 +100,7 @@ const Category = [
     },
     {
         name: 'Thể loại',
-        slug: 'the-thao',
+        slug: 'the-loai',
     },
     {
         name: 'Phiêu lưu',
@@ -120,7 +120,7 @@ const Category = [
     },
     {
         name: 'Hài hước',
-        slug: 'hai-huc',
+        slug: 'hai-huoc',
     },
     {
         name: 'Hình sự',
@@ -136,7 +136,7 @@ const Category = [
     },
     {
         name: 'Thần thoại',
-        slug: 'than-thoi',
+        slug: 'than-thoai',
     },
     {
         name: 'Chính kịch',
@@ -248,46 +248,6 @@ const Country = [
 ];
 //
 const Year = [
-    {
-        name: '2000',
-        slug: '2000',
-    },
-    {
-        name: '2001',
-        slug: '2001',
-    },
-    {
-        name: '2002',
-        slug: '2002',
-    },
-    {
-        name: '2003',
-        slug: '2003',
-    },
-    {
-        name: '2004',
-        slug: '2005',
-    },
-    {
-        name: '2005',
-        slug: '2005',
-    },
-    {
-        name: '2006',
-        slug: '2006',
-    },
-    {
-        name: '2007',
-        slug: '2007',
-    },
-    {
-        name: '2008',
-        slug: '2008',
-    },
-    {
-        name: '2009',
-        slug: '2009',
-    },
     {
         name: '2010',
         slug: '2010',
