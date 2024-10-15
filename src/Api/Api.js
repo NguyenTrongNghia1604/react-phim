@@ -1,25 +1,25 @@
 import axios from 'axios';
 
 export const apiSearch = axios.create({
-    baseURL: '^/api/proxy/data/j4bBHnWv9JD18kNQ3njRH/',
+    baseURL: 'https://cors-anywhere.herokuapp.com/https://ophim17.cc/_next/data/j4bBHnWv9JD18kNQ3njRH/',
 });
 export const apiFilm = axios.create({
-    baseURL: '^/api/proxy/data/j4bBHnWv9JD18kNQ3njRH/',
+    baseURL: 'https://cors-anywhere.herokuapp.com/https://ophim17.cc/_next/data/j4bBHnWv9JD18kNQ3njRH/',
 });
 // lọc thêm thể loại
 export const apiFillterCategory = axios.create({
-    baseURL: '^/api/proxy/data/j4bBHnWv9JD18kNQ3njRH/',
+    baseURL: 'https://cors-anywhere.herokuapp.com/https://ophim17.cc/_next/data/j4bBHnWv9JD18kNQ3njRH/',
 });
 // carousel
 export const apiCarousel = axios.create({
-    baseURL: '^/api/proxy/data/j4bBHnWv9JD18kNQ3njRH/',
+    baseURL: 'https://cors-anywhere.herokuapp.com/https://ophim17.cc/_next/data/j4bBHnWv9JD18kNQ3njRH/',
 });
 
 // lọc phim
 
 // detailt film
 export const apiDetailFilm = axios.create({
-    baseURL: '^/api/proxy/data/j4bBHnWv9JD18kNQ3njRH/',
+    baseURL: 'https://cors-anywhere.herokuapp.com/https://ophim17.cc/_next/data/j4bBHnWv9JD18kNQ3njRH/',
 });
 
 // image
