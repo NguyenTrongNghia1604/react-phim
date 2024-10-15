@@ -1,0 +1,59 @@
+//
+.sidebar {
+    width: 256px;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    overflow: auto;
+    bottom: 0;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    li {
+        .text {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--bs-white);
+            &:hover {
+                color: var(--bs-orange);
+            }
+        }
+        .txt {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--bs-white);
+        }
+        .category {
+            height: 300px;
+            overflow: auto;
+            padding-left: 20px;
+            font-size: 16px;
+            border-radius: 7px;
+            font-weight: 600;
+            animation-duration: 1s;
+            animation-name: slideDown;
+            animation-fill-mode: forwards; /* Đảm bảo phần tử giữ nguyên vị trí sau khi animation kết thúc */
+            background-color: var(--bs-gray-600);
+            color: var(--bs-white);
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%); /* Bắt đầu từ bên ngoài màn hình (phía trên) */
+                opacity: 0; /* Ẩn phần tử ban đầu */
+            }
+
+            to {
+                transform: translateY(0); /* Đưa phần tử về vị trí ban đầu */
+                opacity: 1; /* Hiện phần tử */
+            }
+        }
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+    .sidebar {
+        display: none;
+    }
+}

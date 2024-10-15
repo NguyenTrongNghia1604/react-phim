@@ -1,0 +1,173 @@
+//
+.movie {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-left: 256px;
+    margin-top: 64px;
+    padding: 10px 20px 50px 20px;
+    //background-color: var(--bs-gray-300);
+    background-color: black;
+    .menu {
+        width: 100%;
+        border-radius: 7px;
+        background-color: var(--bs-dark);
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+            li {
+                cursor: pointer;
+                i {
+                    font-size: 16px;
+                    color: var(--bs-white);
+                }
+                .icon {
+                    padding: 0 10px;
+                }
+                span {
+                    color: var(--bs-white);
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .content {
+        margin-top: 20px;
+        h4 {
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--bs-orange);
+        }
+        .fillter {
+            width: 100%;
+            margin: 20px 0 10px 0;
+            border-radius: 7px;
+            background-color: var(--bs-dark);
+            ul {
+                display: flex;
+                align-items: center;
+                padding: 20px 0;
+                li {
+                    padding: 0 10px;
+                    span {
+                        color: var(--bs-white);
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    select {
+                        width: 170px;
+                        height: 30px;
+                        border-radius: 5px;
+                        padding: 0 10px;
+                        color: var(--bs-black);
+                        font-size: 16px;
+                        option {
+                        }
+                    }
+                    button {
+                        width: 100px;
+                        background-color: var(--bs-white);
+                        border: 1px solid var(--bs-gray-600);
+                        color: var(--bs-black);
+                        font-size: 18px;
+                        font-weight: 600;
+                        border-radius: 7px;
+                        padding: 2px 0;
+                    }
+                }
+            }
+        }
+        .item {
+            height: 300px;
+            margin: 10px 0;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            a {
+                position: relative;
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                }
+                span {
+                    position: absolute;
+                    width: 100%;
+                    height: 30px;
+                    background-color: black;
+                    bottom: 0;
+                    padding: 0 10px;
+                    color: var(--bs-white);
+                }
+            }
+        }
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+    .movie {
+        margin-left: 0;
+        .content {
+            .fillter {
+                ul {
+                    display: grid;
+                    text-align: center;
+                    li {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 636px) and (max-width: 777px) {
+    .content {
+        ul {
+            display: grid;
+        }
+    }
+}
+@media only screen and (max-width: 912px) {
+    .movie {
+        .content {
+            .fillter {
+                ul {
+                    display: grid;
+                    text-align: center;
+                    li {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Dành cho điện thoại */
+@media all and (max-width: 480px) {
+    .content {
+        ul {
+            display: grid;
+        }
+    }
+}
+
+/* Dành cho máy tính bảng */
+@media all and (max-width: 1024px) {
+}
+/* Dành cho điện thoại */
+@media all and (min-width: 320px) {
+}
+/* Dành cho máy tính bảng chiều dọc */
+@media all and (min-width: 600px) {
+}
+
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {
+}
+
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+}

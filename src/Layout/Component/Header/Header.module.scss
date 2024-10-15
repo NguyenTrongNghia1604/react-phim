@@ -1,0 +1,163 @@
+//
+@import url('../../../assets/root/root.module.scss');
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    .btn-menu {
+        color: var(--bs-white);
+        font-size: 20px;
+        padding: 10px;
+    }
+    .name {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--bs-orange);
+    }
+}
+.menu {
+    width: 256px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    padding-top: 20px;
+    animation-duration: 1s;
+    animation-name: menuLeftToRight;
+    animation-fill-mode: forwards; /* Đảm bảo phần tử giữ nguyên vị trí sau khi animation kết thúc */
+    background-color: var(--bs-gray-dark);
+    z-index: 100000;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: var(--bs-white);
+        font-size: 20px;
+    }
+    ul {
+        margin-top: 25px;
+        border-top: 1px solid var(--bs-white);
+    }
+    li {
+        padding: 10px 20px;
+        .cate {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i {
+                font-size: 20px;
+                color: var(--bs-white);
+            }
+        }
+        .text {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--bs-white);
+            &:hover {
+                color: var(--bs-orange);
+            }
+        }
+        .txt {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--bs-white);
+        }
+        .category {
+            height: 300px;
+            overflow: auto;
+            padding-left: 20px;
+            font-size: 16px;
+            border-radius: 7px;
+            font-weight: 600;
+            animation-duration: 1s;
+            animation-name: slideLeftToRight;
+            animation-fill-mode: forwards; /* Đảm bảo phần tử giữ nguyên vị trí sau khi animation kết thúc */
+            background-color: var(--bs-gray-600);
+            color: var(--bs-white);
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        @keyframes slideLeftToRight {
+            from {
+                transform: translateX(-100%); /* Bắt đầu từ bên ngoài màn hình (phía trên) */
+                opacity: 0; /* Ẩn phần tử ban đầu */
+            }
+
+            to {
+                transform: translateX(0); /* Đưa phần tử về vị trí ban đầu */
+                opacity: 1; /* Hiện phần tử */
+            }
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            input {
+                width: 170px;
+                padding: 7px 10px;
+                border-radius: 7px;
+                outline: none;
+            }
+            button {
+                width: 30px;
+                margin-left: 7px;
+                color: var(--bs-white);
+                font-size: 20px;
+            }
+        }
+    }
+    @keyframes menuLeftToRight {
+        from {
+            transform: translateX(-100%); /* Bắt đầu từ bên ngoài màn hình (phía trên) */
+            opacity: 0; /* Ẩn phần tử ban đầu */
+        }
+
+        to {
+            transform: translateX(0); /* Đưa phần tử về vị trí ban đầu */
+            opacity: 1; /* Hiện phần tử */
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 635px) {
+    .header {
+        .search {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1246px) {
+    .header {
+        .search {
+            margin-left: 30px;
+        }
+    }
+}
+/* Dành cho điện thoại */
+@media all and (max-width: 480px) {
+}
+
+/* Dành cho máy tính bảng */
+@media all and (max-width: 1024px) {
+}
+/* Dành cho điện thoại */
+@media all and (min-width: 320px) {
+}
+/* Dành cho máy tính bảng chiều dọc */
+@media all and (min-width: 600px) {
+}
+
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {
+}
+
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+}

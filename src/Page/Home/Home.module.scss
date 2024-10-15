@@ -1,0 +1,50 @@
+@import url('../../assets/root/root.module.scss');
+.home {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-left: 256px;
+    margin-top: 64px;
+    padding: 10px 20px 50px 20px;
+    //background-color: var(--bs-gray-300);
+    background-color: black;
+    .content {
+        margin-top: 20px;
+        h4 {
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--bs-orange);
+        }
+        .item {
+            height: 300px;
+            margin: 10px 0;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            a {
+                position: relative;
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                }
+                span {
+                    position: absolute;
+                    width: 100%;
+                    height: 30px;
+                    background-color: black;
+                    bottom: 0;
+                    padding: 0 10px;
+                    color: var(--bs-white);
+                }
+            }
+        }
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+    .home {
+        margin-left: 0;
+    }
+}
